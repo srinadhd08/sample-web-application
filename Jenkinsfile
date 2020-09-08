@@ -17,7 +17,7 @@ pipeline{
 
               stage('Quality Gate Statuc Check'){
 
-		agent { label 'my_node_label', docker 'maven' }
+		agent { label 'any' docker 'maven' }
                 args '-v $HOME/.m2:/root/.m2'
                 }
 	      }
