@@ -20,7 +20,6 @@ pipeline{
 	         agent any
                  docker {
                      image 'maven'
-		     label 'docker'
                      args '-v $HOME/.m2:/root/.m2'
                 }
 	      }
