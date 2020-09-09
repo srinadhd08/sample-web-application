@@ -17,7 +17,7 @@ pipeline{
 
               stage('Quality Gate Statuc Check'){
 
-	         agent  {
+	         agent any
                     docker {
                        image 'maven'
 		       label 'docker'
